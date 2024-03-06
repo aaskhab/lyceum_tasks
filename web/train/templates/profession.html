@@ -1,7 +1,16 @@
-{% extends "base.html" %}
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+</head>
+<body>
+    {% block content %}
     <h1>Миссия Колонизация Марса</h1>
+
+    <h2>Список профессий</h2>
 
     {% set professions = ['инженер-исследователь', 'пилот', 'строитель', 'экзобиолог', 'врач',
     'инженер по терраформированию', 'климатолог', 'специалист по радационной защите' 
@@ -25,3 +34,5 @@
         <h2>Неверный параметр</h2>
     {% endif  %}
 {% endblock %}
+</body>
+</html>
